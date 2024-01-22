@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="./css/painel.css" />
+
+    <title>Painel principal</title>
+  </head>
+  <body>
+
+    <section class="bg-menu">
+      <div class="menu-left">
+        <div class="logo">
+          <img src="../imgs/logo.png" width="100" alt="logo">
+        </div>
+        <div class="menus">
+          <a href="./home.html" class="menu-item">
+            <i class="fas fa-home"></i> Início
+           </a>
+          <a href="./pedidos.html" class="menu-item active">
+            <i class="fas fa-utensils"></i> Pedidos
+           </a>
+           <a href="#" class="menu-item">
+             <i class="fas fa-book-open"></i> Cardápio
+           </a>
+           <a href="#" class="menu-item">
+             <i class="fas fa-cog"></i> Configurações
+           </a>
+          <a href="#" class="menu-item">
+            <i class="fas fa-building"></i> Empresa
+          </a>
+           <a href="#" class="menu-item">
+            <i class="fas fa-chart-line"></i> Relório
+          </a>
+        </div>
+      </div>
+      <div class="conteudo">
+        <div class="menu-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 d-flex align-items-center mt-4">
+                <h1 class="title-page">
+                  <b>
+                    <i class="fas fa-utensils"></i>&nbsp; Painel de pedidos
+                  </b>
+                </h1>
+                <div class="container-right">
+                  <div class="container-dados">
+                    <p>Junior Giroux</p>
+                    <span>juniorgirouxdev@gmail.com</span>
+                  </div>
+                  <a class="btn btn-white btn-sm" href="#">
+                    <i class="fas fa-sign-out-alt"></i>&nbsp; Sair
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="conteudo-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="menus-pedido">
+                  <a class="btn btn-white btn-sm active mb-3" href="#">
+                    <i class="far fa-dot-circle"></i>&nbsp; Pendentes
+                    <span class="badge-total-pedidos">2</span>
+                  </a>
+                  <a class="btn btn-white btn-sm mb-3" href="#">
+                    <i class="far fa-thumbs-up"></i>&nbsp; Aceito
+                    <span class="badge-total-pedidos">2</span>
+                  </a>
+                  <a class="btn btn-white btn-sm mb-3" href="#">
+                    <i class="far fa-clock"></i>&nbsp; Em preparo
+                    <span class="badge-total-pedidos">2</span>
+                  </a>
+                  <a class="btn btn-white btn-sm mb-3" href="#">
+                    <i class="fas fa-motorcycle"></i>&nbsp; Em entrega
+                  </a>
+                  <a class="btn btn-white btn-sm mb-3" href="#">
+                    <i class="far fa-check-circle"></i>&nbsp; Concluído
+                  </a>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row lista-pedidos mt-5">
+                  <div class="col-3">
+                    <div class="card card-pedido">
+                      <div class="card-pediddo-header">
+                        <div class="dropdown">
+                          <button class="btn btn-white btn-sm dropdown-toggle active" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="menuAcoes">Pendente</button>
+                          <div class="dropdown-menu" aria-labelledby="menuAcoes">
+                            <a class="dropdown-item" href="#">Mover para <b>Aceito</b> <i class="far fa-thumbs-up"></i></a>
+                            <a class="dropdown-item" href="#">Mover para <b>Em preparo</b> <i class="far fa-clock"></i></a>
+                            <a class="dropdown-item" href="#">Mover para <b>Em entrega</b> <i class="fas fa-motorcycle"></i></a>
+                            <a class="dropdown-item" href="#">Mover para <b>Concluído</b> <i class="far fa-check-circle"></i></a>
+                            <a class="dropdown-item" href="#">Recusar pedido <i class="far fa-times-circle"></i></a>
+                          </div>
+                        </div>
+                        <p class="numero-pedido mt-2">#1</p>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-pediddo-body mt-3">
+                          <p class="info-pedido">
+                            <i class="fas fa-user"></i> Junior Giroux
+                          </p>
+                          <p class="info-pedido">
+                            <i class="fas fa-motorcycle"></i> Em entrega
+                          </p>
+                          <p class="info-pedido">
+                            <i class="fas fa-coins"></i> Dinheiro
+                            <span>Troco para R$ 50,00</span>
+                          </p>
+                        </div>
+                        <div class="separate"></div>
+                        <div class="card-pediddo-footer">
+                          <p class="horario-pedido"> Recebido há 33min</p>
+                          <p class="total-pedido"><b>R$ 143,50</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card card-pedido">
+                      <div class="card-pediddo-header">
+                        <div class="dropdown">
+                          <button class="btn btn-white btn-sm dropdown-toggle active" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="menuAcoes">Pendente</button>
+                          <div class="dropdown-menu" aria-labelledby="menuAcoes">
+                            <a class="dropdown-item" href="#">Mover para <b>Aceito</b> <i class="far fa-thumbs-up"></i></a>
+                            <a class="dropdown-item" href="#">Mover para <b>Em preparo</b> <i class="far fa-clock"></i></a>
+                            <a class="dropdown-item" href="#">Mover para <b>Em entrega</b> <i class="fas fa-motorcycle"></i></a>
+                            <a class="dropdown-item" href="#">Mover para <b>Concluído</b> <i class="far fa-check-circle"></i></a>
+                            <a class="dropdown-item" href="#">Recusar pedido <i class="far fa-times-circle"></i></a>
+                          </div>
+                        </div>
+                        <p class="numero-pedido mt-2">#1</p>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-pediddo-body mt-3">
+                          <p class="info-pedido">
+                            <i class="fas fa-user"></i> Junior Giroux
+                          </p>
+                          <p class="info-pedido">
+                            <i class="fas fa-motorcycle"></i> Em entrega
+                          </p>
+                          <p class="info-pedido">
+                            <i class="fas fa-coins"></i> Dinheiro
+                            <span>Troco para R$ 50,00</span>
+                          </p>
+                        </div>
+                        <div class="separate"></div>
+                        <div class="card-pediddo-footer">
+                          <p class="horario-pedido"> Recebido há 33min</p>
+                          <p class="total-pedido"><b>R$ 143,50</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <script type="text/javascript" src="../js/bootstrap.bundle.js"></script>
+  </body>
+</html>
